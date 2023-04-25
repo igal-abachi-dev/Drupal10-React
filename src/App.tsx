@@ -48,6 +48,17 @@ function App() {
                         // }}
                     >אודות</Button>
 
+                    <Button
+                        component={Link} href="/page1"
+                        variant="contained"
+                        color="secondary"
+                    >עמוד1</Button>
+
+                    <Button
+                        component={Link} href="/page2"
+                        variant="contained"
+                        color="secondary"
+                    >עמוד2</Button>
 
                     {/*<Button color="inherit" onClick={e => {*/}
                     {/*    e.preventDefault()*/}
