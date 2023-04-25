@@ -1,14 +1,6 @@
 import {DrupalContent, DrupalContentDTO} from './api.types';
-import {HttpClient} from "./http";
+import {HttpClient, IHttpApiClient} from "./http";
 
-export interface IHttpApiClient {
-
-    get<T>(url: string, queryString: any): Promise<T>;
-
-    get<T>(url: string): Promise<T>;
-
-    get<T>(): Promise<T>;
-}
 
 /*
 https://dev-test-dr-10.pantheonsite.io/api/pages

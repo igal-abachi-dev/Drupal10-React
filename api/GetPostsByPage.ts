@@ -18,6 +18,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
         });
 
         const data = await res.json();
+        response.setHeader('Cache-Control', 's-maxage=30');
         return response.status(200).json(data);
     } catch (e) {
         console.error('GET: ', e);
