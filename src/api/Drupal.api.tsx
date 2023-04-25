@@ -24,7 +24,7 @@ export class DrupalApi {
     constructor() {
 //        this._client = new HttpClient(import.meta.env.VITE_API_SERVER); //"https://dev-test-dr-10.pantheonsite.io/api"
 
-        this._client = new HttpClient();//import.meta.env.VITE_Client_API
+        this._client = new HttpClient(import.meta.env.VITE_Client_API);
     }
 
     async GetPages(): Promise<DrupalContent[]> {
