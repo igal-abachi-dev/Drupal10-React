@@ -11,6 +11,8 @@ import {
 import HomePage from './pages/Home';
 import AboutPage from './pages/About';
 import styles from "./App.module.scss";
+import Page1Page from "./pages/Page1";
+import Page2Page from "./pages/Page2";
 
 export function Layout() {
     return (
@@ -18,8 +20,8 @@ export function Layout() {
             <div className={styles.App}>
                 <ScopedCssBaseline>
                     <Routes>
-                        <Route path='/page1' element={<HomePage/>}/>
-                        <Route path='/page2' element={<HomePage/>}/>
+                        <Route path='/page1' element={<Page1Page/>}/>
+                        <Route path='/page2' element={<Page2Page/>}/>
                         <Route path='/About' element={<AboutPage/>}/>
                         <Route path='/' element={<HomePage/>}/>
                     </Routes>

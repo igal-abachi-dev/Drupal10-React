@@ -12,38 +12,16 @@ export function HomePage() {
                 <title>home</title>
             </Helmet>
             {/*<img src={logo} className={styles.App_logo} alt="logo"/>*/}
-            <p>Hello Vite + React!</p>
+            <p>Hello Vite + React + Drupal 10 !</p>
 
             <div>
                 <Divider variant='middle'>
                     <Chip label="Drupal 10 blog" color="primary"/>
                 </Divider>
                 <div>
-
+tester
                 </div>
             </div>
-            <p>
-                Edit <code>App.tsx</code> and save to test HMR updates.
-            </p>
-            <p>
-                <a
-                    className={styles.App_link}
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                {' | '}
-                <a
-                    className={styles.App_link}
-                    href="https://vitejs.dev/guide/features.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Vite Docs
-                </a>
-            </p>
         </header>
     );
 }

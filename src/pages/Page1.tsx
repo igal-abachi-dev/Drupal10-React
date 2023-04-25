@@ -7,15 +7,18 @@ import {Chip, Divider} from "@mui/material";
 import {DrupalApi} from "../api/Drupal.api";
 import {DrupalContent, nullable} from "../api/api.types";
 
-export function AboutPage() {
+export function Page1Page() {
 
     const [page, setPage] = useState<nullable<DrupalContent>>(null);
+    const [posts, setPosts] = useState<DrupalContent[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {
             const api = new DrupalApi();
-            const data = await api.GetPage(1);
+            const data = await api.GetPage(2);
             setPage(data);
+            const data2 = await api.GetPosts(1);
+            setPosts(data2);
         };
         fetchData().catch(console.error);
     }, []);
@@ -33,9 +36,19 @@ export function AboutPage() {
                 <div dangerouslySetInnerHTML={{__html: page?.body}}>
 
                 </div>
+                {
+                    posts.map(p => <div>
+                        <Divider variant='middle'>
+                            <Chip label={p?.title} color="secondary"/>
+                        </Divider>
+                        <div dangerouslySetInnerHTML={{__html: p?.body}}>
+
+                        </div>
+                    </div>)
+                }
             </div>
         </header>
     );
 }
 
-export default AboutPage;
+export default Page1Page;
