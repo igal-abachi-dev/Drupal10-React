@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+
 import styles from "../App.module.scss";
 
 import {Chip, Divider} from '@mui/material';

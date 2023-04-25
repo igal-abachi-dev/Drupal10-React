@@ -1,11 +1,11 @@
-import React, {useEffect} from 'react';
-import {Chip, Divider, ScopedCssBaseline} from '@mui/material';
+
+import {ScopedCssBaseline} from '@mui/material';
 
 import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Link
+   // Link
 } from 'react-router-dom';
 
 import HomePage from './pages/Home';

@@ -1,5 +1,4 @@
-import {DrupalContent, DrupalContentDTO, nullable} from './api.types';
-import React, {useEffect, useState} from 'react';
+import {DrupalContent, DrupalContentDTO} from './api.types';
 import {HttpClient} from "./http";
 
 export interface IHttpApiClient {

@@ -1,16 +1,14 @@
-import React, {useState} from 'react';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
-import styles from './App.module.scss'
+//import styles from './App.module.scss'
 import Layout from "./Layout";
 
 
 
 import {createTheme, ThemeProvider} from "@mui/material/styles";
 import {CssBaseline, AppBar, Toolbar, Typography, Box, Button, Link} from "@mui/material";
-import {Apps, ForkRight} from "@mui/icons-material";
+import {Apps} from "@mui/icons-material";
 
 function App() {
 

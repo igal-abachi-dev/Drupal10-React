@@ -1,8 +1,8 @@
-import {nullable} from './api.types';
-import React, {useEffect, useState} from 'react';
+//import {nullable} from './api.types';
+//import React, {useEffect, useState} from 'react';
 import axios, {AxiosInstance, AxiosResponse} from 'axios';
-import _ from 'lodash';
-import fetchAdapter from "@vespaiach/axios-fetch-adapter";
+//import _ from 'lodash';
+//import fetchAdapter from "@vespaiach/axios-fetch-adapter";
 
 export interface IHttpApiClient {
 
@@ -30,7 +30,7 @@ export class HttpClient implements IHttpApiClient {
         this.axClient.defaults.withCredentials = false;
 
 
-        this.axClient.interceptors.response.use(function (res) {
+        this.axClient.interceptors.response.use(function (res:AxiosResponse) {
             return res;
         }, (err) => {
 
