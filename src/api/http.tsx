@@ -38,10 +38,10 @@ export class HttpClient implements IHttpApiClient {
 
         return await ky.get(`${url}${qry}`, {prefixUrl: this.baseApiUrl}).json()
             .then(res => {
-                console.log('GET: ', url, res.data);
+                console.log('GET: ', url, res);
                 return res;
             })
-            .then(res => res.data as T)
+            .then(res => res as T)
             .catch(err => {
                 console.error('GET: ', url, err);
                 return err;
