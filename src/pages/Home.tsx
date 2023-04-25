@@ -1,4 +1,3 @@
-
 import styles from "../App.module.scss";
 
 import {Chip, Divider} from '@mui/material';
@@ -11,15 +10,12 @@ export function HomePage() {
             <Helmet>
                 <title>home</title>
             </Helmet>
-            {/*<img src={logo} className={styles.App_logo} alt="logo"/>*/}
-            <p>Hello Vite + React + Drupal 10 !</p>
-
             <div>
                 <Divider variant='middle'>
-                    <Chip label="Drupal 10 blog" color="primary"/>
+                    <Chip label="blog" color="primary"/>
                 </Divider>
                 <div>
-tester
+                    tester
                 </div>
             </div>
         </header>

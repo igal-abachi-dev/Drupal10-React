@@ -2,6 +2,7 @@ export type nullable<T> = (T | null | undefined);
 
 export const guidEmpty = "00000000-0000-0000-0000-000000000000";
 
+//from: https://dev-test-dr-10.pantheonsite.io/admin/content
 
 export class DrupalContentDTO {
     nid: DrupalIntValue[];
