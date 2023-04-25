@@ -21,19 +21,19 @@ export class DrupalApi {
 
     async GetPages(): Promise<DrupalContent[]> {
         //const res = await this._client.get<DrupalContentDTO[]>("/pages");
-        const res = await this._client.get<DrupalContentDTO[]>("/GetPages/");
+        const res = await this._client.get<DrupalContentDTO[]>("GetPages/");
         return res.map(p => new DrupalContent(p));
     }
 
     async GetPage(nid: number): Promise<DrupalContent> {
         //const res = await this._client.get<DrupalContentDTO[]>("/pages/" + nid);
-        const res = await this._client.get<DrupalContentDTO[]>("/GetPageById/?nid=" + nid);
+        const res = await this._client.get<DrupalContentDTO[]>("GetPageById/?nid=" + nid);
         return new DrupalContent(res[0]);
     }
 
     async GetPosts(page: number): Promise<DrupalContent[]> {
         //const res = await this._client.get<DrupalContentDTO[]>("/posts/page" + page);
-        const res = await this._client.get<DrupalContentDTO[]>("/GetPostsByPage/?page=" + page);
+        const res = await this._client.get<DrupalContentDTO[]>("GetPostsByPage/?page=" + page);
         return res.map(p => new DrupalContent(p));
     }
 }
