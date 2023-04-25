@@ -15,6 +15,7 @@ export class DrupalContent {
     constructor(dto: DrupalContentDTO) {
         this.title = dto.title[0].value;
         this.body = dto.body[0].value;
+        console.log("DrupalContent:",dto,this);
     }
 
     title: string;
@@ -26,6 +27,7 @@ export class DrupalPage {
     constructor(dto: DrupalContentDTO) {
         this.nid = dto.nid[0].value;
         this.title = dto.title[0].value;
+        console.log("DrupalPage:",dto,this);
     }
 
     nid: number;
