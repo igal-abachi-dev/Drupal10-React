@@ -3,6 +3,7 @@ import fetch from 'node-fetch';
 import type {VercelRequest, VercelResponse} from '@vercel/node';
 
 export default async (request: VercelRequest, response: VercelResponse) => {
+    let {} = request.query;
     const url = "https://dev-test-dr-10.pantheonsite.io/api" + "/pages";
 
     try {
